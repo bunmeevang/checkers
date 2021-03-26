@@ -1,0 +1,120 @@
+* {
+    margin: auto;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100vh;
+}
+
+
+td {
+    text-align: center;
+    background-color: red;
+    height: 80px;
+    width: 80px;
+}
+
+.empty {
+    background-color: black;
+}
+
+.redPlayersTurn {
+    font-family: "monospace";
+    color: black;
+    text-align: center;
+    font-size: 50px;
+}
+
+.blackPlayersTurn {
+    font-family: "monospace";
+    color: lightgray;
+    text-align: center;
+    font-size: 50px;
+}
+
+.redPoints {
+    font-family: "monospace";
+    color: black;
+    text-align: center;
+    font-size: 50px;
+}
+
+.blackPoints {
+    font-family: "monospace";
+    color: black;
+    text-align: center;
+    font-size: 50px;
+}
+
+.redPiece {
+    padding: 20px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
+    border: 3px solid white;
+    background-color: red;
+}
+
+.blackPiece {
+    padding: 20px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50px;
+    border: 3px solid white;
+    background-color: black;
+}
+
+p {
+    display: inline-block;
+}
+
+
+span {
+    display: inline-block;
+}
+
+.king.redPiece {
+    background-color: yellow;
+}
+
+.king.blackPiece {
+    background-color: blue;
+}
+
+.winningMessage {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .9);
+    justify-items: center;
+    align-items: center;
+    color: white;
+    font-size: 100px;
+    flex-direction: column;
+}
+
+.winningMessage button {
+    font-size: 80px;
+    background-color: red;
+    border: 1px solid black;
+    padding: .25em .5em;
+}
+
+.winningMessage button:hover {
+    background-color: black;
+    color: red;
+    border-color: white ;
+}
+
+.winningMessage.show {
+    display: flex;
+}
+
